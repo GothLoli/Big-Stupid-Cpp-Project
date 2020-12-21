@@ -5,11 +5,12 @@
 using namespace std;
 int main()
 {
-    char choice,exit;
+    char choice,exit='n';
 
     while (true)
     {
-    //system("cls");
+    getchar();
+    system("cls");
     if (exit=='y' || exit=='Y')
         break;
 
@@ -26,21 +27,24 @@ int main()
 
     switch(choice) {
       case '1' :
-         {cout << "You Chose 1" << endl;
-         getchar();
-         system("cls");
-         break;}
+         cout << "You Chose 1\n" << endl;
+         cin.get(choice);
+         break;
       case '2' :
-         cout << "You Chose 2" << endl;
+         cout << "You Chose 2\n" << endl;
+         cin.get(choice);
          break;
       case '3' :
-         cout << "You Chose 3" << endl;
+         cout << "You Chose 3\n" << endl;
+         cin.get(choice);
          break;
       case '4' :
-         cout << "You Chose 4" << endl;
+         cout << "You Chose 4\n" << endl;
+         cin.get(choice);
          break;
       case '5' :
-         cout << "You Chose 5" << endl;
+         cout << "You Chose 5\n" << endl;
+         cin.get(choice);
          break;
       case '6' :
          cout << "You Chose Exit" << endl;
@@ -48,6 +52,7 @@ int main()
          break;
       default :
          cout << "Invalid Choice Dummy" << endl;
+         cin.get(choice);
 
    }
     }
